@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--List-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="ListViewController" customModule="PokemonTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bfF-N3-Ce4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="TVI-ac-z8u"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="uCv-IV-G9p"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bfF-N3-Ce4" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="Gnc-RW-eEG"/>
+                            <constraint firstItem="bfF-N3-Ce4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="OGp-Dg-iKh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bfF-N3-Ce4" secondAttribute="trailing" id="dX2-Hy-2dY"/>
+                            <constraint firstAttribute="bottom" secondItem="bfF-N3-Ce4" secondAttribute="bottom" id="gbf-eh-3CH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="List" id="Q8Y-aa-gk4"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="bfF-N3-Ce4" id="TZZ-mK-ikf"/>
+                        <segue destination="vP8-sy-GJF" kind="show" identifier="DetailViewController" id="pqU-f5-gFY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="112.5"/>
+        </scene>
+        <!--詳細頁-->
+        <scene sceneID="JTP-zh-oUo">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailStoryboard" id="vP8-sy-GJF" userLabel="詳細頁" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Mjg-Z1-sEj"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXU-JB-907" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
