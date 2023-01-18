@@ -1,0 +1,18 @@
+platform :ios, '11.0'
+
+target 'PokemonTest' do
+  use_frameworks!
+
+  # 圖片
+  pod 'Kingfisher'
+
+  # Rx
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxRelay'
+  pod 'NSObject+Rx'
+
+  # DB
+  pod 'RealmSwift', '~>10'
+
+end
