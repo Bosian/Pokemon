@@ -1,4 +1,4 @@
-# pokemon
+# Pokemon
 
 ## Swift UI preview for UIKit
 
@@ -6,6 +6,6 @@
 - <img width="1352" alt="截圖 2023-01-18 下午5 58 55" src="https://user-images.githubusercontent.com/9071512/213141508-6d24ee0e-9fb4-4896-ba35-3ddc399ce337.png">
 
 
-# Reddit Restful API
+# Pokemon API
 - Doc https://pokeapi.co
 - GET https://pokeapi.co/api/v2/pokemon
