@@ -2,7 +2,7 @@
 
 ## 使用的Pods
 - RxSwift
-- Realm
+- RealmSwift
 - Kingfisher
 
 ## Swift UI preview for UIKit
